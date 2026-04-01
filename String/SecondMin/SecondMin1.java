@@ -8,20 +8,23 @@ public class SecondMin1 {
     char minc =' ';
     char minSec = ' ';
 
-    for(char ch: s.toCharArray()){
-      int n = s.replace(ch+"","").length();
+    for(char ch: s1.toCharArray()){
+      int n = s1.replace(ch+"","").length();
       int occ = s1.length() - n;
-      if(min<occ){
-        min2 = min;
+      if(occ< min1){
+        min2 = min1;
         minSec = minc;
+
+        min1 = occ;
+        minc = ch;
       }
-      else if(occ!=min && occ < min2){
+      else if(occ!=min1 && occ < min2){
         min2 = occ;
         minSec =ch;
       }
     }
-    System.out.println(minc+"="+min1);
-    System.out.println(minSec+"="+min2);
+    System.out.println("First Min: "+minc+"="+min1);
+    System.out.println("Second Min: "+minSec+"="+min2);
 
 
   }
