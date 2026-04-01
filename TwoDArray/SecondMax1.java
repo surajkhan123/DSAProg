@@ -14,6 +14,6 @@ public class SecondMax1 {
         }else if(a[i][j] > secondMax && a[i][j]!= max)
           secondMax = a[i][j];
       }
-    } System.out.println("2nd Max is ele: "+secondMax);
+    } System.out.println("2nd Max ele is : "+secondMax);
   }
 }
